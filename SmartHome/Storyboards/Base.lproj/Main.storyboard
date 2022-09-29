@@ -37,7 +37,6 @@
                                                     <rect key="frame" x="306" y="0.0" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="addSwitchTapped:" destination="18n-jc-7pL" eventType="valueChanged" id="CJv-us-hKR"/>
-                                                        <action selector="switchIsOnTapped:" destination="rId-so-gKj" eventType="valueChanged" id="RDN-67-uVj"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -58,7 +57,7 @@
                     <navigationItem key="navigationItem" title="Smart Home" id="7W8-H6-8Ru">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="9vP-ma-tTU">
                             <connections>
-                                <action selector="addButtonTapped:" destination="18n-jc-7pL" id="bOL-Ze-K9X"/>
+                                <action selector="addButtonTapped:" destination="18n-jc-7pL" id="dhL-ar-Mhn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

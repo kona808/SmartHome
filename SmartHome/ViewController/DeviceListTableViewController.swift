@@ -57,7 +57,7 @@ class DeviceListTableViewController: UITableViewController, DeviceTableViewCellD
     
     
 
-    @IBAction func addSwitchTapped(_ sender: Any) {
+    @IBAction func addButtonTapped(_ sender: Any) {
         presentNewDeviceAlertController()
     }
 }
