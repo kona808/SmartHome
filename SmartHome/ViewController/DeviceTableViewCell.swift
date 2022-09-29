@@ -8,20 +8,20 @@
 import UIKit
 
 protocol DeviceTableViewCellDelegate: AnyObject {
-    func markButtonIsOnTapped(_ cell: DeviceTableViewCell)
+    func markSwitchIsOnToggled(_ cell: DeviceTableViewCell)
 }
 
 class DeviceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var deviceNameLabel: UILabel!
-    @IBOutlet weak var buttonIsOn: UISwitch!
+    @IBOutlet weak var switchIsOn: UISwitch!
     
     weak var delegate: DeviceTableViewCellDelegate?
     
     func updateView(device: Device) {
         deviceNameLabel.text = device.name
     }
-    @IBAction func buttonIsOnTapped(_ sender: Any) {
-        delegate?.markButtonIsOnTapped(self)
+    @IBAction func switchIsOnToggled(_ sender: Any) {
+        delegate?.markSwitchIsOnToggled(self)
     }
 }

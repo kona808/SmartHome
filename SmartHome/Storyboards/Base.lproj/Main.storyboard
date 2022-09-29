@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Device List Table View Controller-->
+        <!--Smart Home-->
         <scene sceneID="Xod-GA-S9v">
             <objects>
                 <tableViewController id="18n-jc-7pL" customClass="DeviceListTableViewController" customModule="SmartHome" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,8 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xJg-6i-eao">
                                                     <rect key="frame" x="306" y="0.0" width="51" height="31"/>
                                                     <connections>
-                                                        <action selector="buttonIsOnTapped:" destination="rId-so-gKj" eventType="valueChanged" id="dXH-qt-Hzh"/>
+                                                        <action selector="addSwitchTapped:" destination="18n-jc-7pL" eventType="valueChanged" id="CJv-us-hKR"/>
+                                                        <action selector="switchIsOnTapped:" destination="rId-so-gKj" eventType="valueChanged" id="RDN-67-uVj"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -44,8 +45,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="buttonIsOn" destination="xJg-6i-eao" id="97E-uQ-CZC"/>
                                     <outlet property="deviceNameLabel" destination="TnS-ln-rcw" id="MDr-wj-KOh"/>
+                                    <outlet property="switchIsOn" destination="xJg-6i-eao" id="VMa-UD-rdD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -54,7 +55,7 @@
                             <outlet property="delegate" destination="18n-jc-7pL" id="hke-6k-3yC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7W8-H6-8Ru">
+                    <navigationItem key="navigationItem" title="Smart Home" id="7W8-H6-8Ru">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="9vP-ma-tTU">
                             <connections>
                                 <action selector="addButtonTapped:" destination="18n-jc-7pL" id="bOL-Ze-K9X"/>
